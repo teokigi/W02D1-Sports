@@ -51,9 +51,14 @@ class SportsTeam
       return false
   end
   #add function that adds 2 points for victory
-  def add_victory_points
-      @points += 2
+  def add_game_result(game_result)
+      if game_result == "win"
+          @points += 2
+      elsif game_result == "lose"
+          @points += 0
+      end
+
   end
-  
+
 #class end
 end

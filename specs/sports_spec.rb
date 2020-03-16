@@ -63,8 +63,12 @@ class TestSports < MiniTest::Test
     end
     #add victory point of 2.
     def test_010_team_wins_a_game_gains_2_points
-        @team_gg.add_victory_points
+        @team_gg.add_game_result("win")
         assert_equal(2,@team_gg.points)
     end
-
+    #on loss no points added
+    def test_011_team_loses_a_game_gains_0_points
+        @team_gg.add_game_result("loses")
+        assert_equal(0,@team_gg.points)
+    end
 end
