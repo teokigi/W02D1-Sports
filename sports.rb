@@ -20,8 +20,20 @@ class SportsTeam
       return @coach
   end
   #set team name
+  def set_name(new_name)
+      @name = new_name
+  end
   #add new team member to roster
+  def add_to_roster(new_player)
+      @roster.push(new_player)
+  end
   #remove team member from roster
+  def remove_roster(player)
+      @roster.delete(player)
+  end
   #set team coach
-
+  def set_coach(new_coach)
+      @coach = new_coach
+  end
+#class end
 end
