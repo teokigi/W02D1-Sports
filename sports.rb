@@ -42,7 +42,12 @@ class SportsTeam
   # end
   #--------------------
   def check_roster(player_name)
-
+      for player in @roster
+          if player == player_name
+              return true
+          end
+      end
+      return false
   end
 
 #class end
