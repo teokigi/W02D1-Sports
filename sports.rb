@@ -1,4 +1,4 @@
-class sports
+class SportsTeam
 
 # attr_accessor :team_name, :players_on_team, :team_coach,
 
