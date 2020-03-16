@@ -33,19 +33,19 @@ class TestSports < MiniTest::Test
     end
     #test set team name function
     def test_004_set_team_name_glasgow_gluttons
-        set_name("glasgow gluttons")
+        @team_gg.set_name("glasgow gluttons")
         assert_equal("glasgow gluttons", @team_gg.get_name)
     end
     #test adding to roster
     def test_005_add_to_roster_jeff
         @team_gg.add_to_roster("jeff")
-        assert_equal(8,@team_gg.length)
+        assert_equal(8,@team_gg.get_roster.length)
     end
 
     #test removing from roster
     def test_006_remove_from_roster_by_name
         @team_gg.remove_roster("jimmy")
-        assert_equal(6,@team_gg.length)
+        assert_equal(6,@team_gg.get_roster.length)
     end
 
     #test setting new coach
@@ -53,5 +53,5 @@ class TestSports < MiniTest::Test
         @team_gg.set_coach("hendrix")
         assert_equal("hendrix",@team_gg.get_coach)
     end
-    
+
 end
