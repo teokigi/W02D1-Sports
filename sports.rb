@@ -1,11 +1,12 @@
 class SportsTeam
     #allows access to team attributes
-    attr_accessor :name, :roster, :coach
+    attr_accessor :name, :roster, :coach, :points
 
   def initialize(name,roster,coach)
       @name = name
       @roster = roster
       @coach = coach
+      @points = 0
   end
   #old getter functions
   #---------------------
