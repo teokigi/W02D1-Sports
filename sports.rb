@@ -41,7 +41,7 @@ class SportsTeam
   #     @coach = new_coach
   # end
   #--------------------
-  def check_roster(player_name)
+  def check_for_player(player_name)
       for player in @roster
           if player == player_name
               return true
