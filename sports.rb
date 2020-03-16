@@ -1,6 +1,6 @@
 class SportsTeam
     #allows access to team attributes
-    attr_accessor :name, :roster, :coach,
+    attr_accessor :name, :roster, :coach
 
   def initialize(name,roster,coach)
       @name = name
