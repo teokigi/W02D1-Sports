@@ -50,6 +50,10 @@ class SportsTeam
       end
       return false
   end
-
+  #add function that adds 2 points for victory
+  def add_victory_points
+      @points += 2
+  end
+  
 #class end
 end
