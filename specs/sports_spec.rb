@@ -61,4 +61,10 @@ class TestSports < MiniTest::Test
     def test_009_check_player_by_name_false
         assert_equal(false,@team_gg.check_for_player("frank"))
     end
+    #add victory point of 2.
+    def test_010_team_wins_a_game_gains_2_points
+        @team_gg.add_victory_points
+        assert_equal(2,@team_gg.points)
+    end
+
 end
