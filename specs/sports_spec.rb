@@ -53,5 +53,12 @@ class TestSports < MiniTest::Test
         @team_gg.coach = "hendrix"
         assert_equal("hendrix",@team_gg.coach)
     end
-
+    #check player by name, true
+    def test_008_check_player_by_name_true
+        assert_equal(true, @team_gg.check_for_player("jimmy"))
+    end
+    #check player by name, false
+    def test_009_check_player_by_name_false
+        assert_equal(false,@team_gg.check_for_player("frank"))
+    end
 end

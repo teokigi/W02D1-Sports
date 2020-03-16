@@ -41,5 +41,9 @@ class SportsTeam
   #     @coach = new_coach
   # end
   #--------------------
+  def check_roster(player_name)
+
+  end
+
 #class end
 end
